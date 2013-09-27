@@ -1,4 +1,5 @@
 A simple bash script created from the information on: http://code.google.com/p/smali/wiki/DeodexInstructions. This script is used to deodex Android files in the /system/app or /system/framework folder.
 
+Put script in 'system/' dir of firmware and run, i use baksmali-1.4.2.jar and mali-1.4.2.jar from https://code.google.com/p/smali/downloads/list
 
-Tested on: Ubuntu 10.04 64bit
+Tested on: Ubuntu 12.04 64bit
