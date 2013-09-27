@@ -1,10 +1,5 @@
 #!/bin/bash
 
-#Uncompiling app/UserDictionaryProvider.odex
-#Adding classes.dex to app/UserDictionaryProvider.jar
-
-
-ERROR=0
 smalibaksmali_dir=/home/samoylov/.bin
 classpath=":com.android.location.provider.jar:javax.obex.jar:core.jar:apache-xml.jar:bouncycastle.jar"
 
@@ -27,8 +22,7 @@ odexFile=${x/\.\//}
       rm -rf $odexFile.out $odexFile-classes.dex classes.dex $odexFile
     else
 			rm -rf $odexFile.out $odexFile-classes.dex classes.dex
-      ERROR=1
-      echo "Error!"
+      echo "Error: $odexFile-classes.dex not found"
     fi
 
 echo
